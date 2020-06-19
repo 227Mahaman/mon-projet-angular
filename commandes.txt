@@ -1,5 +1,6 @@
 Install Bootstrap :
 1. npm install bootstrap@3.3.7 --save
 2. ajouter boostrap dans angular.json au niveau du style: "./node_modules/bootstrap/dist/css/bootstrap.css"
+Pour utiliser le 2Bindings: on doit importer le FormsModule
 
 
