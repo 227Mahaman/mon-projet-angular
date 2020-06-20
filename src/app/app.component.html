@@ -5,8 +5,7 @@
       <ul class="list-group">
         <app-appareil *ngFor="let appareil of appareils"
                       [appareilName]="appareil.name"]
-                      [appareilStatus]="appareil.status">
-        </app-appareil>
+                      [appareilStatus]="appareil.status"></app-appareil>
       </ul>
       <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
     </div>
