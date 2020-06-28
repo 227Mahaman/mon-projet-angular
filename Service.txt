@@ -3,3 +3,7 @@ Création de service
 - Son injection se fait dans app.module.ts:
 - D'abord on l'importe puis on l'injecte dans providers.
 - Pour l'utiliser dans un component, on l'injecte dans le constructor du component sans oublie de l'importer.
+- Pour utiliser les données du service dans un component:
+  - On doit implemente et importe OnInit;
+  - L'implementation nous oblige à créer la fonction ngOnInit() qui sera execute juste apres le constructeur;
+
