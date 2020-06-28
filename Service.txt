@@ -1,0 +1,5 @@
+Création de service
+1. AppareilService: dans le dossier service
+- Son injection se fait dans app.module.ts:
+- D'abord on l'importe puis on l'injecte dans providers.
+- Pour l'utiliser dans un component, on l'injecte dans le constructor du component sans oublie de l'importer.

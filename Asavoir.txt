@@ -1,3 +1,10 @@
 1. Les components sont les composantes de base d'une application angular cad notre application n'est ni plus ni moins une arborescence de component.
 2. La balise app-root est crée par angular.
 3. Les pipes: async peut être utilisé pour le chargement des données;
+4. Service:
+  Pour être utiliser dans une application, il doit être injecter.
+  Il y a trois niveaux d'injection possible:
+    a. Dans app.module.ts: disponible pour les components de l'application et les autres services qui seront créés par la suite;
+    b. Dzns app.component.ts: disponible pour les components de l'application mais ne serait pas pour les autres servcies ;
+    c. On peut l'injecte dans un autre component mais il ne sera disponible que dans ce component;
+
