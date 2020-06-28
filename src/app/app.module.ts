@@ -9,6 +9,15 @@ import { AppareilComponent } from './appareil/appareil.component';
 import  { AppareilService } from "./services/appareil.service";
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
+import {RouterModule, Routes} from "@angular/router";
+
+const appRoutes: Routes = [
+  //Objet et son component
+  { path: 'appareils', component: AppareilViewComponent },
+  { path: 'auth', component: AuthComponent },
+  //Page d'accueil
+  { path: '', component: AppareilViewComponent }
+];
 
 @NgModule({
   declarations: [
@@ -21,7 +30,10 @@ import { AppareilViewComponent } from './appareil-view/appareil-view.component';
   imports: [
     BrowserModule,
     //AppRoutingModule,
-    FormsModule //2Bindings
+    //2Bindings
+    FormsModule,
+    //Integration
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     AppareilService

@@ -1,0 +1,5 @@
+Routing
+Integration des routes dans app.module
+Une fois l'intégration s'est bien passé dans les templates pour appeler les routes, on utilise à la place des <app-..>
+</app-..>: <router-outlet></router-outlet>
+
